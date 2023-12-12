@@ -1,6 +1,11 @@
 // EU flag:
 // image:img/media/image3.png[image,width=123,height=115]
 
+// add cover image to img directory and update filename below
+ifdef::backend-html5[]
+image::img/B3_logo_vertical_full.svg[]
+endif::backend-html5[]
+
 *Prepared under contract from the European Commission*
 
 Grant agreement No. 101059592

@@ -5,7 +5,7 @@ Peter Desmet <peter.desmet@inbo.be>; Damiano Oldoni <damiano.oldoni@inbo.be>; Ma
 :numbered:
 :revnumber: 1.0 TBC
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
-:title-page-background-image: image::img/web/photo.jpg[position=top center]
+:title-page-background-image: image::img/B3_logomark.svg[position=top center,fit=none,pdfwidth=85%]
 :license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ifdef::backend-html5[]
