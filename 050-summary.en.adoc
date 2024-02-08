@@ -1,0 +1,43 @@
+== Key takeaway messages
+
+* Effective biodiversity management and policy requires analysis-ready biodiversity data.
+* Species occurrence cubes provide such data by grouping species occurrence data along spatial, temporal and/or taxonomic dimensions.
+* This document specifies the technical properties of those cubes.
+* This document specifies the requirements for software to produce those cubes.
+* The software will be implemented as a new service provided by the Global Biodiversity Information Facility (GBIF).
+
+== Executive summary
+
+This document presents the specification for “species occurrence cubes”, a format to summarize species occurrence data. It also outlines the requirements for software to produce such cubes and how it can be integrated in services provided by the Global Biodiversity Information Facility (GBIF).
+
+Producing a species occurrence cube will broadly involve the following steps:
+
+[arabic]
+. Search and filter data: a user will be able to restrict a cube to occurrence data of their interest.
+. Define cube dimensions: a user will be able to select from a number of dimensions and categories that determine how occurrence data will be grouped into a cube. For example, taxonomic information can be grouped by family, temporal information by year, and spatial information by a chosen grid reference system, taking into account the spatial uncertainty associated with occurrences.
+. Generate cube: based on the parameter selection by the user, software will process the occurrences into a species occurrence cube, providing measures for each combination of dimensions (e.g. 5 occurrences for species _X_ at year _Y_ in grid cell _Z_). The software can also provide reference measures to assess sampling bias.
+. Deposit cube: the user can define in what format and where (cloud storage location) a cube should be deposited. Deposited cubes will be automatically documented with metadata and assigned a Digital Object Identifier (DOI) so they can be reproduced and referenced.
+
+The software developed for this service must be open source and documented, so that users can understand, use, install and contribute to it. It must also be demonstrated to operate on one or more public cloud providers.
+
+== Non-technical summary
+
+The Global Biodiversity Information Facility (GBIF) provides an increasing amount of occurrence data: data that documents when and where species have been observed. These data are essential for policy and research, but challenging for users to download and process on a large scale.
+
+This document describes a reporting service that will be built by GBIF to facilitate that process. Rather than downloading individual records, users will be able to download a summary of the data based on their preferences. For example, they can select specific species, years, or other aspects of the data that are relevant to their interests. Based on these preferences, a summary table called a "species occurrence cube" will be generated for download. This cube will contain a condensed representation of the requested information along with record counts.
+
+Users often want to compare the species occurrence cubes with other datasets, such as land cover data sets. To make this comparison easier, the reporting service will enable users to specify how the data are grouped by location. For example, they can choose a known gridding scheme, which divides the study area into smaller sections or grids, allowing for consistent comparisons.
+
+Once a report is generated, it is provided with a Digital Object Identifier (DOI) to ensure that it can be easily and accurately cited and that the report will remain available for others to reuse.
+
+== List of abbreviations
+
+|===
+|API |Application Programming Interface
+|EBV |Essential Biodiversity Variable
+|EEA |European Environment Agency
+|EU |European Union
+|FAIR |Findable, Accessible, Interoperable and Reusable
+|GBIF |Global Biodiversity Information Facility
+|SQL |Structured Query Language
+|===

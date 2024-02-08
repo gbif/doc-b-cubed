@@ -1,0 +1,59 @@
+// add cover image to img directory and update filename below
+ifdef::backend-html5[]
+image::img/B3_logo_vertical_full.svg[Biodiversity Building Blocks For Policy]
+endif::backend-html5[]
+
+// EU flag, https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en
+image:img/EN_FundedbytheEU_RGB_POS.svg[Funded by the European Union,250,56,align="center"]
+
+Views and opinions expressed are those of the authors only and do not necessarily reflect those of the
+European Union or the European Commission. Neither the EU nor the EC can be held responsible for
+them.
+
+*Prepared under contract from the European Commission*
+
+Grant agreement No. 101059592
+
+EU Horizon Europe Research and Innovation Action
+
+[cols=",",options="header",]
+|===
+|Project acronym: |*B3*
+|Project full title: |*Biodiversity Building Blocks for policy*
+|Project duration: |01.03.2023 – 31.08.2026 (42 months)
+|Project coordinator: |Dr. Quentin Groom, Agentschap Plantentuin Meise (MeiseBG)
+|Call: |HORIZON-CL6-2021-GOVERNANCE-01
+|Deliverable title: |Software specifications
+|Deliverable n°: |D2.1
+|WP responsible: |WP2
+|Nature of the deliverable: |Document, Report
+|Dissemination level: |Public
+|Lead partner: |EV INBO
+|Recommended citation: |Desmet P, Oldoni D, Blissett M, Robertson T (2023). _Specification for species occurrence cubes and their production_. B-Cubed project deliverable D2.1.
+|Due date of deliverable: |Month n°4
+|Actual submission date: |Month n°4
+|===
+
+Deliverable status:
+
+[cols=",,,",options="header",]
+|===
+|*Version* |*Status* |*Date* |*Author(s)*
+|1.0 |Final |30 June 2023 |Peter Desmet (EV INBO), Damiano Oldoni (EV INBO), Matthew Blissett (GBIF), Tim Robertson (GBIF)
+|===
+
+//=== Suggested citation
+
+//Author U, Autore D & Auteur T. The special guide to something. Third edition. GBIF Secretariat: Copenhagen. 
+// Uncomment once a DOI is assigned
+//https://doi.org/10.EXAMPLE/EXAMPLE
+
+//=== Licence
+
+//The document _The special guide to something_ is licensed under https://creativecommons.org/licenses/by-sa/4.0[Creative Commons Attribution-ShareAlike 4.0 Unported License].
+
+//=== Persistent URI
+
+//#TODO: Assign a DOI before publication#
+// Uncomment once a DOI is assigned
+//https://doi.org/10.EXAMPLE/EXAMPLE

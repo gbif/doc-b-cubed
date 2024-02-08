@@ -1,0 +1,7 @@
+==  Methodology
+
+The specification in this document are based on the concept of “occurrence cubes” as described in Oldoni et al. (2020). We expanded those to meet the requirements of the B-Cubed project partners and to describe a cube production service to be hosted by GBIF. Feedback was gathered from B-Cubed project partners in the kick-off meeting (13-14 March 2023), two online calls (24 and 27 April 2023) and a document open for comments.
+
+Where possible, the specification builds on infrastructure and services already provided by GBIF (e.g. occurrence processing, occurrence search, download service, etc.).
+
+The key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL in this document are to be interpreted as described in https://www.ietf.org/rfc/rfc2119.txt[RFC 2119].

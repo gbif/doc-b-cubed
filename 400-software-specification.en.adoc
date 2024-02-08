@@ -1,0 +1,76 @@
+==  Software specification 
+
+===  Cube production software
+
+This software produces cubes following the specification above.
+
+. The software MUST use species occurrence data as its source.
+.. The software MUST accept tabular representations of occurrence data expressed using Darwin Core, including CSV file formats.
+.. The software SHOULD assume occurrence data to be formatted (i.e. have the same fields) as data returned by GBIF in occurrence downloads.
+.. The software MUST NOT assume the GBIF occurrence index to be the source of this data. Users SHOULD be able to provide their own occurrence data (e.g. for testing purposes).
+
+. The software MUST use parameters by which users can define how a cube is produced.
+.. The parameters MUST include the selected cube properties, such as dimensions, categories, reference grids, default coordinate uncertainty, seed for random grid assignment (see <<spatial>>), measures (see <<measures>>) and format (see <<format>>).
+.. The parameter values MUST be controlled.
+.. The parameters SHOULD use reasonable defaults where relevant (see <<cube-specification>>).
+.. SQL MAY be considered as the notation format for the parameters.
+
+. The software MUST be able to use reference grids (see <<reference-grids>>).
+.. Reference grids MAY be reformatted to optimize processing. This process SHOULD be documented and repeatable to allow updates if necessary.
+.. Representing a reference grid as a formula SHOULD be preferred over storing a reference grid as data.
+
+. Using the input data and parameters, the software MUST produce the intended cube.
+.. The software MUST support the output formats defined in <<format>> or allow downstream services to convert to these formats.
+.. The software MUST return the metadata defined in <<metadata>> or allow downstream service to create this metadata. Note that default parameter values SHOULD also be included in the metadata.
+.. The software SHOULD NOT deposit the cube. This is better reserved for downstream services.
+
+. Users SHOULD be able to install and use the software, including on cloud processing platforms.
+.. Sufficient technical documentation MUST be provided that documents how the software can be installed.
+.. Sufficient technical documentation MUST be provided that documents how the software may be used on a cloud processing platform.
+.. This MUST be demonstrated on at least one public cloud provider such as Microsoft Azure through a tutorial or recorded demonstration or similar.
+
+. The software SHOULD be developed using best practices, including:
+.. Source code MUST be version controlled.
+.. The software SHOULD be organized in modular components (functions) to facilitate understanding and code contributions.
+.. The software functions MUST be documented to facilitate understanding and code contributions.
+.. The software MUST include tests to guarantee the intended functionality and prevent breaking changes.
+
+. The software MUST be released as open source software.
+.. The software MUST be licensed under an open software licence such as Apache License 2.0.
+.. The software SHOULD use semantic versioning for releases.
+.. Source code SHOULD be hosted on GitHub to facilitate collaboration (including code contributions, feature requests, bug reports, etc.).
+
+===  Cube workflow service
+
+This service SHOULD embed the cube production software (<<cube-production-software>>) into the GBIF occurrence download service (GBIF Secretariat 2023a), allowing users to search for occurrences of interest and download/deposit these as a cube following their specification.
+
+. The service MUST allow users to *search and filter for occurrences* of interest. Note that the GBIF occurrence search (GBIF Secretariat 2023b) already provides this functionality.
+
+. The service MAY allow users to *exclude unwanted occurrences* (e.g. occurrences that were flagged). Note that the GBIF occurrence search (GBIF Secretariat 2023b) already provides this functionality through its API, but not at www.gbif.org.
+.. This MAY be implemented as a NOT filter.
+
+. The service MUST allow users to *define the dimensions* of the cube (see <<dimensions>>):
+.. The user MUST be able to select what dimensions (controlled list) to include.
+.. The user MUST be able to select what category/categories (controlled list) to use for each dimension.
+.. The user MUST be able to select what reference grid (controlled list, see <<reference-grids>>) and grid assignment method (controlled list, see <<grid-assignment-methods>>) to use for the spatial dimension.
+.. The user MAY be able to select a default coordinate uncertainty for occurrences that do not have this information.
+.. The user MAY be able to select the seed for random grid assignment.
+.. The service MAY provide information on the cardinality of the selected options, so users have an idea of the number of rows that will be returned in the cube (e.g. year to day “likely to increase the number of rows 360 times”).
+
+. The service MAY allow users to *define the measures* included in the cube (see <<measures>>).
+.. Alternatively, the service MAY return the same measures for all cubes.
+
+. The service SHOULD allow users to *define the output format* of the cube (see <<format>> and <<output-formats>>).
+.. Alternatively, the service MAY use the same output format for all cubes, but MUST offer the possibility to create different distributions of a deposited cube in other formats.
+
+. The service SHOULD allow users to *define a destination* where the cube is deposited (see <<findability-and-storage>> and <<data-storage-infrastructures>>).
+.. Alternatively, the service MAY use the same destination to deposit all cubes, but MUST offer the possibility to copy a deposited cube to other destinations.
+
+. Sufficient technical documentation MUST be provided for users to understand and use the service.
+
+. The service MUST be provided as a REST API and SHOULD be integrated as part of the GBIF occurrence download service (GBIF Secretariat 2023a).
+
+. Interfaces to GBIF occurrence download API SHOULD be updated to incorporate the new functionality:
+.. The graphical user interface at https://www.gbif.org MUST be updated.
+.. The R package rgbif (Chamberlain et al. 2023a) SHOULD be updated.
+.. The Python package pygbif (Chamberlain et al. 2022b) MAY be updated.

@@ -1,37 +1,35 @@
 = Specification for species occurrence cubes and their production
 Peter Desmet <peter.desmet@inbo.be>; Damiano Oldoni <damiano.oldoni@inbo.be>; Matthew Blissett <mblissett@gbif.org>; Tim Robertson <trobertson@gbif.org>
 :toc: left
-:toclevels: 2
+:toclevels: 3
 :numbered:
-:revnumber: 1.0 TBC
-:revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
+:revnumber: 1.0
+:revdate: 2023-06-30
 :title-page-background-image: image::img/B3_logomark.svg[position=top center,fit=none,pdfwidth=85%]
-:license: https://creativecommons.org/licenses/by-sa/4.0/
+//:license: https://creativecommons.org/licenses/by-sa/4.0/
+// Use "Table 1" and "Section 3" style.
+:xrefstyle: short
 
 ifdef::backend-html5[]
 languageLinks:combined[]
 endif::backend-html5[]
 
-include::b3_spec.en.adoc[]
+:sectnums!:
 
-//:sectnums!:
+include::010-colophon.en.adoc[]
 
-//include::colophon.en.adoc[]
+include::050-summary.en.adoc[]
 
-//include::preface.en.adoc[]
+:sectnums:
 
-//:sectnums:
+include::100-introduction.en.adoc[]
 
-//include::100.en.adoc[]
+include::200-methodology.en.adoc[]
 
-//include::200.en.adoc[]
+include::300-cube-specification.en.adoc[]
 
-//:sectnums!:
+include::400-software-specification.en.adoc[]
 
-//include::afterword.en.adoc[]
+include::500-acknowledgements.en.adoc[]
 
-//include::appa.en.adoc[]
-
-//include::glossary.en.adoc[]
-
-//include::bibliography.en.adoc[]
+include::600-references.en.adoc[]

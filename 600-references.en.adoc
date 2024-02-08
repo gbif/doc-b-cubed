@@ -1,0 +1,55 @@
+==  References
+
+Botella C, Joly A, Monestiez P, Bonnet P, Munoz F (2020) Bias in presence-only niche models related to sampling effort and species niches: lessons for background point selection. PLoS One 15:e0232078. https://doi.org/10.1371/journal.pone.0232078
+
+Chamberlain S, Barve V, Mcglinn D, Oldoni D, Desmet P, Geffert L, Ram K (2023a) rgbif: Interface to the Global Biodiversity Information Facility API. R package version 3.7.7.2, https://cran.r-project.org/package=rgbif
+
+Chamberlain S, Forkel R, Legind J, Van Hoey S, Desmet P, Noé N (2023b) pygbif: Python client for the GBIF API. Python package version 0.6.3, https://pygbif.readthedocs.io/en/latest/
+
+DataCite Metadata Working Group (2021) DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs. Version 4.4. https://doi.org/10.14454/3w3z-sa82
+
+de Beer IW, Hui C, Botella C, Richardson DM (2023) Drivers of compositional turnover of narrow-ranged versus widespread naturalised woody plants in South Africa. Frontiers in Ecology and Evolution. 11:1106197. https://doi.org/10.3389/fevo.2023.1106197
+
+European Environment Agency (2013) EEA reference grid. Accessed via https://www.eea.europa.eu/data-and-maps/data/eea-reference-grids-2 on 2023-06-12.
+
+GADM (2022) Administrative areas. Accessed via https://gadm.org/ on 2023-06-16.
+
+GBIF Secretariat (2018) Relative observation trends. Accessed via https://www.gbif.org/tools/observation-trends/about on 2023-06-26.
+
+GBIF Secretariat (2022) GBIF Backbone Taxonomy. Checklist dataset https://doi.org/10.15468/39omei accessed via GBIF.org on 2023-06-07.
+
+GBIF Secretariat (2023a) GBIF occurrence download API. Accessed via https://www.gbif.org/developer/occurrence#download on 2023-06-26.
+
+GBIF Secretariat (2023b) GBIF occurrence search. Accessed via https://www.gbif.org/developer/occurrence#search on 2023-06-26.
+
+Groom QJ, Marsh CJ, Gavish Y, Kunin WE. (2018) How to predict fine resolution occupancy from coarse occupancy data. Methods Ecol Evol. 2018; 9: 2273– 2284. https://doi.org/10.1111/2041-210X.13078
+
+Kissling WD, Ahumada JA, Bowser A, Fernandez M, Fernández N, García EA, Guralnick RP, Isaac NJB, Kelling S, Los W, McRae L, Mihoub J-B, Obst M, Santamaria M, Skidmore AK, Williams KJ, Agosti D, Amariles D, Arvanitidis C, Bastin L, De Leo F, Egloff W, Elith J, Hobern D, Martin D, Pereira HM, Pesole G, Peterseil J, Saarenmaa H, Schigel D, Schmeller DS, Segata N, Turak E, Uhlir PF, Wee B, Hardisty AR (2018) Building essential biodiversity variables (EBVs) of species distribution and abundance at a global scale. Biol Rev, 93: 600-625. https://doi.org/10.1111/brv.12359
+
+Larsen R (2021) Geocoding and generalisations. Accessed via https://towardsdatascience.com/geocoding-and-generalisations-41fa5652d34c on 2023-06-07.
+
+Larsen R, Holmern T, Prager SD, Maliti H, Røskaft, E. (2009) Using the extended quarter degree grid cell system to unify mapping and sharing of biodiversity data. African Journal of Ecology, 47: 382-392. https://doi.org/10.1111/j.1365-2028.2008.00997.x
+
+Oldoni D, Groom Q, Adriaens T, Davis AJS, Reyserhove L, Strubbe D, Vanderhoeven S, Desmet P (2020) Occurrence cubes: a new paradigm for aggregating species occurrence data. bioRxiv 2020.03.23.983601 https://doi.org/10.1101/2020.03.23.983601
+
+Oldoni D, Groom Q, Adriaens T, Hillaert J, Reyserhove L, Strubbe D, Vanderhoeven S, Desmet P (2022). Occurrence cubes at species level for European countries (Version 20221202) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7389450
+
+Protected Planet (2012) World Database on Protected Areas (WDPA). Accessed via https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA on 2023-06-15.
+
+Quoss L, Fernandez N, Langer C, Valdez J, Pereira HM (2021) ebvcube: Working with netCDF for Essential Biodiversity Variables. https://cran.r-project.org/package=ebvcube
+
+Radchuk V, Turlure C, Schtickzelle N (2013) Each life stage matters: the importance of assessing the response to climate change over the complete life cycle in butterflies. J Anim Ecol, 82: 275-285. https://doi.org/10.1111/j.1365-2656.2012.02029.x
+
+Richardson N, Cook I, Crane N, Dunnington D, François R, Keane J, Moldovan-Grünfeld D, Ooms J (2023) arrow: Integration to 'Apache' 'Arrow'. https://cran.r-project.org/package=arrow
+
+Veness C (2020) Convert between Latitude/Longitude & UTM coordinates / MGRS grid references. Accessed via https://www.movable-type.co.uk/scripts/latlong-utm-mgrs.html on 2023-06-15.
+
+Walsh P, Pollock R (2012) Table Schema. Version 1. Accessed via https://specs.frictionlessdata.io/table-schema/ on 2023-06-22.
+
+Wallace RD, Bargeron CT, LaForest JH, Carroll RL (2021) The Life Cycle of Invasive Alien Species Occurrence Data. In Invasive Alien Species (eds T. Pullaiah and M.R. Ielmini). https://doi.org/10.1002/9781119607045.ch49
+
+Waller J (2019) Gridded Datasets Update. Accessed via https://data-blog.gbif.org/post/gridded-datasets-update/ on 2023-06-13.
+
+Wieczorek W, Guo G, Hijmans R (2004) The point-radius method for georeferencing locality descriptions and calculating associated uncertainty, International Journal of Geographical Information Science, 18:8, 745-767, https://doi.org/10.1080/13658810412331280211
+
+Zenodo (2023) Quarter Degree Grid Cells community. Accessed via https://zenodo.org/communities/qdgc/ on 2023-06-07.
