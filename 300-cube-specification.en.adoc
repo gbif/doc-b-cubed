@@ -238,7 +238,7 @@ An easy metric is the total number of occurrences for a “target group” (Bote
 .. It SHOULD NOT be possible to select more than one rank. Note that it is theoretically possible to provide this measure for all (higher) ranks.
 .. If a taxon does not have a parent at the selected rank, its target occurrence count SHOULD be NULL.
 . Other measures than target occurrence count MAY be considered, including:
-. Number of days observed.
+.. Number of days observed.
 .. Number of observers (recordedBy). Note that this value is not controlled and can lead to higher numbers than expected.
 
 .Example of target occurrence counts at genus level for a cube with taxonomic and temporal dimensions.
